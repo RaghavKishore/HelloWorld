@@ -1,0 +1,209 @@
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 5592
+% Total received flits: 33704
+% Global average delay (cycles): 25.8704
+% Global average throughput (flits/cycle): 0.0531558
+% Throughput (flits/cycle/IP): 0.0585139
+% Max delay (cycles): 379
+% Total energy (J): 7.68929e-06
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 9417
+% Total received flits: 56592
+% Global average delay (cycles): 451.785
+% Global average throughput (flits/cycle): 0.0889395
+% Throughput (flits/cycle/IP): 0.09825
+% Max delay (cycles): 9175
+% Total energy (J): 9.81483e-06
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 12623
+% Total received flits: 74954
+% Global average delay (cycles): 1195.38
+% Global average throughput (flits/cycle): 0.117544
+% Throughput (flits/cycle/IP): 0.130128
+% Max delay (cycles): 9273
+% Total energy (J): 1.00852e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 14347
+% Total received flits: 86308
+% Global average delay (cycles): 1502.8
+% Global average throughput (flits/cycle): 0.135264
+% Throughput (flits/cycle/IP): 0.14984
+% Max delay (cycles): 9697
+% Total energy (J): 1.02375e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 16098
+% Total received flits: 96639
+% Global average delay (cycles): 1826.96
+% Global average throughput (flits/cycle): 0.151332
+% Throughput (flits/cycle/IP): 0.167776
+% Max delay (cycles): 9796
+% Total energy (J): 1.05143e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 16554
+% Total received flits: 99002
+% Global average delay (cycles): 2388.72
+% Global average throughput (flits/cycle): 0.155109
+% Throughput (flits/cycle/IP): 0.171878
+% Max delay (cycles): 9931
+% Total energy (J): 1.05971e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 16454
+% Total received flits: 98998
+% Global average delay (cycles): 3985.23
+% Global average throughput (flits/cycle): 0.157459
+% Throughput (flits/cycle/IP): 0.1746
+% Max delay (cycles): 9906
+% Total energy (J): 1.06205e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 16578
+% Total received flits: 98999
+% Global average delay (cycles): 4706.28
+% Global average throughput (flits/cycle): 0.155068
+% Throughput (flits/cycle/IP): 0.171873
+% Max delay (cycles): 9921
+% Total energy (J): 1.06445e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 16424
+% Total received flits: 99005
+% Global average delay (cycles): 4986.3
+% Global average throughput (flits/cycle): 0.15509
+% Throughput (flits/cycle/IP): 0.171884
+% Max delay (cycles): 9971
+% Total energy (J): 1.0666e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 16547
+% Total received flits: 98998
+% Global average delay (cycles): 5113.56
+% Global average throughput (flits/cycle): 0.157483
+% Throughput (flits/cycle/IP): 0.1746
+% Max delay (cycles): 9964
+% Total energy (J): 1.05765e-05
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+
+
+ Tile #4 with coordinates[0][1] being processed
+ Tile #6 with coordinates[2][1] being processed 
+
+Reset... done! Now running for 10000 cycles...
+Noxim simulation completed.
+ ( 11000 cycles executed)
+% Total received packets: 16500
+% Total received flits: 99002
+% Global average delay (cycles): 5187.28
+% Global average throughput (flits/cycle): 0.157548
+% Throughput (flits/cycle/IP): 0.174607
+% Max delay (cycles): 9931
+% Total energy (J): 1.05539e-05
