@@ -235,6 +235,8 @@ vector <
     NoximCoord dst_coord = id2Coord(route_data.dst_id);
     int dir_in = route_data.dir_in;
 
+    cout<<"\nsource:"<<route_data.src_id<<"::current::"<<route_data.current_id<<"::destintion::"<<route_data.dst_id;    
+
     switch (NoximGlobalParams::routing_algorithm) {
     case ROUTING_XY:
 	return routingXY(position, dst_coord);
@@ -495,6 +497,14 @@ vector < int >NoximRouter::routingCustom(const NoximCoord & current,
     //cout<< "Yea!";
     vector < int >directions;
     int tile_is_4, tile_is_6;
+
+    NoximCoord tile_4, tile_6;//
+    tile_4.x=0;//
+    tile_4.y=1;//
+    tile_6.x=2;//
+    tile_6.y=1;//
+    //cout<<"(tile_4.x, tile_4.y)"<<tile_4.x<<","<<tile_4.y;
+
     tile_is_4 = (current.x == 0 && current.y == 1) ? 1 : 0;
     tile_is_6 = (current.x == 2 && current.y == 1) ? 1 : 0;
     
@@ -504,22 +514,55 @@ vector < int >NoximRouter::routingCustom(const NoximCoord & current,
                      tile_is_6 == 1 ? (1 + d_M(0, destination.x, 1, destination.y) ) : 100;
     use_link       = (d_with_link < d_without_link)     ?  1 : 0;  
  
+    int d_direct, d_via_t4, d_via_t6;
     //if(d_with_link != 100) cout<<"\n:: d_without_link = "<< d_without_link <<" :: d_with_link = "<< d_with_link<<" :: use_link = "<< use_link; //For details on the terminal 
  
     if( ( (tile_is_4 == 1) || (tile_is_6 == 1) ) && use_link == 1 )    //In case of tiles 4 and 6: Use extra link when hop count is minimum
     {   
-        cout<<"#";
+        //cout<<"::1::";
 	directions.push_back(DIRECTION_CUSTOM);
     }
     
     else if( ( (tile_is_4 == 1) || (tile_is_6 == 1) ) && use_link == 0 ) //Else In case of tiles 4 and 6: Use NorthLast when not using extra link
     {
+	//cout<<"::2::";
 	return routingNorthLast(current, destination);
     }
     
     else   //Else for all other tiles: Use default XY
     { 
-	return routingXY(current, destination);
+	
+	//cout<<"::3::";
+	//TBD::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//find hop_count_via_nearest_hybrid_router
+	d_via_t4 = d_M(current.x, 0, current.y, 1) + 1 + d_M(2, destination.x, 1, destination.y);
+	d_via_t6 = d_M(current.x, 2, current.y, 1) + 1 + d_M(0, destination.x, 1, destination.y);
+	//find hop_count_direct
+	d_direct = d_M(current.x, destination.x, current.y, destination.y);
+	//if via_hybrid < direct 
+	if( (d_via_t4 < d_direct) || (d_via_t6 < d_direct) )
+	{
+		//cout<<"::4::";
+		//then use XY-routing with (current, nearest_hybrid_router)
+		if( d_via_t4 < d_via_t6 )
+			{
+			//cout<<"::5::";
+			return routingXY(current, tile_4);
+			}
+		else if( d_via_t6 < d_via_t4 )
+			{
+			//cout<<"::6::";
+			return routingXY(current, tile_6);
+			}
+	}
+	else
+		{
+		//cout<<"::7::";
+		return routingXY(current, destination);
+		}
+	//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	
+	//return routingXY(current, destination);
     }
 
     return directions;
